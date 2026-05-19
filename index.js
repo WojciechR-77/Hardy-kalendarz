@@ -1,19 +1,15 @@
 /**
  * Hardy Wyższa Forma – Training Plan → ICS Calendar File
- * Generuje plik hardy.ics który można subskrybować w Google/Apple/Outlook Calendar
- * Nie wymaga żadnych kluczy API ani autoryzacji Google.
+ * Generuje plik hardy.ics z całodniowymi wydarzeniami
  */
 
 const fs = require("fs");
 
-// ─── CONFIG ────────────────────────────────────────────────────────────────
 const URLS = [
   "https://www.hardywyzszaforma.pl/post/plan-treningowy-na-tydzie%C5%84-29-07-03-08",
   "https://www.hardywyzszaforma.pl/post/plan-treningowy",
 ];
-const DEFAULT_HOUR     = 18; // godzina treningu (18:00)
-const OUTPUT_FILE      = "hardy.ics";
-// ───────────────────────────────────────────────────────────────────────────
+const OUTPUT_FILE = "hardy.ics";
 
 // ─── SCRAPING ──────────────────────────────────────────────────────────────
 
@@ -47,45 +43,43 @@ function stripHtml(html) {
     .replace(/&nbsp;/g, " ").replace(/\s{2,}/g, " ").replace(/ \n/g, "\n");
 }
 
-async function scrapePlan() {
-  let bestText = "", bestModified = null;
-
+async function scrapeAllTexts() {
+  const texts = [];
   for (const url of URLS) {
     console.log(`📥 Pobieram: ${url}`);
     try {
-      const html     = await fetchPageText(url);
-      const ogDesc   = extractMeta(html, "og:description") || "";
-      const modified = extractMeta(html, "article:modified_time");
-      const modDate  = modified ? new Date(modified) : null;
+      const html      = await fetchPageText(url);
+      const ogDesc    = extractMeta(html, "og:description") || "";
       const bodyMatch = html.match(/<body[^>]*>([\s\S]*?)<\/body>/i);
       const bodyText  = bodyMatch ? stripHtml(bodyMatch[1]) : "";
+      const modified  = extractMeta(html, "article:modified_time");
 
+      // Zbierz wszystkie teksty które zawierają dni tygodnia
       for (const text of [ogDesc, bodyText]) {
-        if (text.includes("Czwartek") || text.includes("Tydzień")) {
-          if (!bestModified || (modDate && modDate > bestModified)) {
-            bestText = text; bestModified = modDate;
-            console.log(`✅ Znaleziono plan (mod: ${modified || "brak daty"})`);
-          }
+        if (text.includes("Czwartek") || text.includes("Tydzień") || text.includes("Poniedziałek")) {
+          texts.push({ text, modified });
+          console.log(`  ✅ Znaleziono treść (mod: ${modified || "brak"})`);
           break;
         }
       }
     } catch (err) {
-      console.warn(`⚠️  Błąd: ${err.message}`);
+      console.warn(`  ⚠️  Błąd: ${err.message}`);
     }
   }
-
-  if (!bestText) throw new Error("Nie udało się pobrać planu.");
-  return bestText;
+  return texts;
 }
 
 // ─── PARSING ───────────────────────────────────────────────────────────────
 
 function parseDate(dayStr) {
   const p = dayStr.trim().split(".");
-  return `${p[2] || new Date().getFullYear()}${p[1].padStart(2,"0")}${p[0].padStart(2,"0")}`;
+  const yr  = p[2] || new Date().getFullYear().toString();
+  const mon = p[1].padStart(2, "0");
+  const day = p[0].padStart(2, "0");
+  return `${yr}${mon}${day}`;
 }
 
-function parsePlan(text) {
+function parseDays(text) {
   const lines = text.split(/[\n\r]+/).map(l => l.replace(/\s+/g," ").trim()).filter(Boolean);
   const days  = [];
   let currentDay = null, currentClass = null;
@@ -101,32 +95,42 @@ function parsePlan(text) {
     }
     if (!currentDay) continue;
     if (/^[⇒=>\u21d2]+\s*\S/.test(line)) {
-      currentClass = { type: line.replace(/^[⇒=>\u21d2\s]+/,"").trim(), exercises:"", method:"", duration:60 };
+      currentClass = { type: line.replace(/^[⇒=>\u21d2\s]+/,"").trim(), exercises:"", method:"", duration:"" };
       currentDay.classes.push(currentClass);
       continue;
     }
     if (!currentClass) continue;
-    if (/^[CĆ]wiczenia/i.test(line))    currentClass.exercises = line.replace(/^[CĆ]wiczenia[:\s]*/i,"").trim();
-    else if (/^Metoda/i.test(line))      currentClass.method    = line.replace(/^Metoda[^:]*:\s*/i,"").trim();
-    else if (/^Czas/i.test(line)) { const m = line.match(/(\d+)\s*min/i); if (m) currentClass.duration = parseInt(m[1]); }
+    if (/^[CĆ]wiczenia/i.test(line))  currentClass.exercises = line.replace(/^[CĆ]wiczenia[:\s]*/i,"").trim();
+    else if (/^Metoda/i.test(line))    currentClass.method    = line.replace(/^Metoda[^:]*:\s*/i,"").trim();
+    else if (/^Czas/i.test(line)) {
+      const m = line.match(/(\d+)\s*min/i);
+      if (m) currentClass.duration = m[1] + " min";
+    }
   }
   if (currentDay) days.push(currentDay);
   return days;
+}
+
+function mergeDays(allDayArrays) {
+  // Połącz dni ze wszystkich źródeł, usuń duplikaty (wygrywa ten z więcej zajęciami)
+  const map = new Map();
+  for (const days of allDayArrays) {
+    for (const day of days) {
+      const existing = map.get(day.date);
+      if (!existing || day.classes.length > existing.classes.length) {
+        map.set(day.date, day);
+      }
+    }
+  }
+  return Array.from(map.values()).sort((a, b) => a.date.localeCompare(b.date));
 }
 
 // ─── ICS GENERATION ────────────────────────────────────────────────────────
 
 function escapeIcs(str) {
   return (str || "")
-    .replace(/\\/g, "\\\\")
-    .replace(/;/g, "\\;")
-    .replace(/,/g, "\\,")
-    .replace(/\n/g, "\\n");
-}
-
-function formatIcsDate(dateStr, hour) {
-  // dateStr: "20260522", hour: 18 → "20260522T180000"
-  return `${dateStr}T${String(hour).padStart(2,"0")}0000`;
+    .replace(/\\/g, "\\\\").replace(/;/g, "\\;")
+    .replace(/,/g, "\\,").replace(/\n/g, "\\n");
 }
 
 function buildDescription(day) {
@@ -134,9 +138,16 @@ function buildDescription(day) {
     const parts = [`🏋️ ${c.type}`];
     if (c.exercises) parts.push(`Ćwiczenia: ${c.exercises}`);
     if (c.method)    parts.push(`Metoda: ${c.method}`);
-    if (c.duration)  parts.push(`Czas: ${c.duration} min`);
+    if (c.duration)  parts.push(`Czas: ${c.duration}`);
     return parts.join("\\n");
   }).join("\\n\\n");
+}
+
+function nextDay(dateStr) {
+  // dateStr: "20260522" → "20260523"
+  const d = new Date(`${dateStr.slice(0,4)}-${dateStr.slice(4,6)}-${dateStr.slice(6,8)}`);
+  d.setDate(d.getDate() + 1);
+  return d.toISOString().slice(0,10).replace(/-/g,"");
 }
 
 function generateIcs(days) {
@@ -145,25 +156,18 @@ function generateIcs(days) {
   const events = days
     .filter(d => d.classes.length > 0)
     .map(day => {
-      const types   = day.classes.map(c => c.type).join(", ");
-      const dtStart = formatIcsDate(day.date, DEFAULT_HOUR);
-      const dtEnd   = formatIcsDate(day.date, DEFAULT_HOUR + 1) .replace("T190000","T193000"); // +1h30m
-      const uid     = `hardy-${day.date}@hardy-sync`;
+      const types = day.classes.map(c => c.type).join(", ");
+      const uid   = `hardy-${day.date}@hardy-sync`;
 
       return [
         "BEGIN:VEVENT",
         `UID:${uid}`,
         `DTSTAMP:${now}`,
-        `DTSTART;TZID=Europe/Warsaw:${dtStart}`,
-        `DTEND;TZID=Europe/Warsaw:${formatIcsDate(day.date, DEFAULT_HOUR + 1).replace(/0000$/, "3000")}`,
+        `DTSTART;VALUE=DATE:${day.date}`,
+        `DTEND;VALUE=DATE:${nextDay(day.date)}`,
         `SUMMARY:${escapeIcs("🏋️ Hardy – " + types)}`,
         `DESCRIPTION:${buildDescription(day)}`,
         `LOCATION:${escapeIcs("Hardy. Wyższa Forma, ul. Nyska 59, Wrocław")}`,
-        `BEGIN:VALARM`,
-        `TRIGGER:-PT60M`,
-        `ACTION:DISPLAY`,
-        `DESCRIPTION:Trening za godzinę!`,
-        `END:VALARM`,
         "END:VEVENT",
       ].join("\r\n");
     });
@@ -175,25 +179,7 @@ function generateIcs(days) {
     "CALSCALE:GREGORIAN",
     "METHOD:PUBLISH",
     "X-WR-CALNAME:Hardy – Plan treningowy",
-    "X-WR-TIMEZONE:Europe/Warsaw",
     "X-WR-CALDESC:Plan treningowy Hardy. Wyższa Forma",
-    "BEGIN:VTIMEZONE",
-    "TZID:Europe/Warsaw",
-    "BEGIN:STANDARD",
-    "DTSTART:19701025T030000",
-    "RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10",
-    "TZOFFSETFROM:+0200",
-    "TZOFFSETTO:+0100",
-    "TZNAME:CET",
-    "END:STANDARD",
-    "BEGIN:DAYLIGHT",
-    "DTSTART:19700329T020000",
-    "RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3",
-    "TZOFFSETFROM:+0100",
-    "TZOFFSETTO:+0200",
-    "TZNAME:CEST",
-    "END:DAYLIGHT",
-    "END:VTIMEZONE",
     ...events,
     "END:VCALENDAR",
   ].join("\r\n");
@@ -204,12 +190,19 @@ function generateIcs(days) {
 async function main() {
   console.log("🏋️  Hardy ICS Generator\n");
 
-  const text = await scrapePlan();
-  const days = parsePlan(text);
+  const texts = await scrapeAllTexts();
+
+  if (!texts.length) {
+    console.error("❌ Nie udało się pobrać żadnej treści.");
+    process.exit(1);
+  }
+
+  const allDayArrays = texts.map(({ text }) => parseDays(text));
+  const days = mergeDays(allDayArrays);
 
   if (!days.length) {
     console.error("❌ Nie znaleziono dni treningowych.");
-    console.error("Fragment tekstu:", text.substring(0, 500));
+    console.error("Fragment tekstu:", texts[0].text.substring(0, 800));
     process.exit(1);
   }
 
