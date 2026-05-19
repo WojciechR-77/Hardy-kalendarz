@@ -5,6 +5,9 @@ on:
     - cron: "0 6 */2 * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -13,10 +16,10 @@ jobs:
       - name: Pobierz kod
         uses: actions/checkout@v4
 
-      - name: Ustaw Node.js 20
+      - name: Ustaw Node.js 24
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "24"
 
       - name: Generuj plik ICS
         run: node index.js
