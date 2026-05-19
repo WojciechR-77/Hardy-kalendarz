@@ -1,0 +1,12 @@
+{
+  "name": "hardy-calendar-sync",
+  "version": "3.0.0",
+  "description": "Scraper planu treningowego Hardy → plik ICS do subskrypcji",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
