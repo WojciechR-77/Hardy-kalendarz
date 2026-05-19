@@ -10,66 +10,28 @@ który możesz **zasubskrybować** w Google Calendar, Apple Calendar lub Outlook
 ## Jak to działa
 
 1. GitHub Actions co drugi dzień uruchamia skrypt
-2. Skrypt pobiera plan z hardywyzszaforma.pl i generuje `hardy.ics`
-3. Plik jest commitowany do repozytorium pod stałym adresem URL
-4. Google Calendar subskrybuje ten URL i odświeża się automatycznie
-5. GitHub wysyła e-mail po każdym uruchomieniu (sukces lub błąd)
+2. Skrypt pobiera plan z hardywyzszaforma.pl przez przeglądarkę (Puppeteer + Chromium)
+3. Generuje plik `hardy.ics` i commituje go do repozytorium
+4. Google Calendar subskrybuje plik przez GitHub Pages i odświeża się automatycznie
 
 ---
 
-## Krok 1 – Utwórz repozytorium na GitHub
-
-1. Wejdź na **github.com** → załóż konto (jeśli nie masz) → zaloguj się
-2. Kliknij **"+" → New repository**
-3. Nazwa: `hardy-sync`, ustaw jako **Public** ✅ (potrzebne do subskrypcji kalendarza)
-4. Kliknij **Create repository**
-5. Wgraj wszystkie pliki z tego folderu do repozytorium
-
----
-
-## Krok 2 – Włącz powiadomienia e-mail z GitHub
-
-GitHub automatycznie wyśle Ci maila po każdym uruchomieniu skryptu — bez żadnej dodatkowej konfiguracji.
-
-1. Zaloguj się na GitHub
-2. Kliknij swoje zdjęcie profilowe (prawy górny róg) → **Settings**
-3. Po lewej: **Notifications**
-4. Znajdź sekcję **GitHub Actions**
-5. Przy opcji „Send notifications for workflow runs" zaznacz **Email** ✅
-
----
-
-## Krok 3 – Pierwsze uruchomienie
-
-1. W repozytorium przejdź do zakładki **Actions**
-2. Wybierz workflow **Hardy Calendar Sync**
-3. Kliknij **Run workflow → Run workflow**
-4. Po chwili w repozytorium pojawi się plik `hardy.ics`
-
----
-
-## Krok 4 – Zasubskrybuj kalendarz
-
-Po pierwszym uruchomieniu skopiuj ten URL (zamień `TWOJA_NAZWA` na swoją nazwę użytkownika GitHub):
+## Subskrypcja kalendarza
 
 ```
-https://raw.githubusercontent.com/TWOJA_NAZWA/hardy-sync/main/hardy.ics
+https://wojciechr-77.github.io/Hardy-kalendarz/hardy.ics
 ```
 
 ### Google Calendar
-
 1. Wejdź na **calendar.google.com**
 2. Po lewej, przy „Inne kalendarze", kliknij **+**
-3. Wybierz **Z adresu URL**
-4. Wklej URL powyżej → **Dodaj kalendarz**
+3. Wybierz **Z adresu URL** → wklej URL → **Dodaj kalendarz**
 
 ### Apple Calendar (iPhone / Mac)
-
 1. Ustawienia → Kalendarz → Konta → Dodaj konto → Inne
 2. Dodaj subskrybowany kalendarz → wklej URL
 
 ### Outlook
-
 1. Dodaj kalendarz → Subskrybuj z sieci Web → wklej URL
 
 ---
@@ -77,36 +39,52 @@ https://raw.githubusercontent.com/TWOJA_NAZWA/hardy-sync/main/hardy.ics
 ## Harmonogram
 
 Skrypt odpala się **co drugi dzień o 8:00 rano**. Jeśli plan się zmienił,
-plik `hardy.ics` zostaje zaktualizowany w repozytorium, a Twój kalendarz
-odświeży się przy kolejnym sprawdzeniu (Google Calendar robi to zwykle co kilka godzin).
+`hardy.ics` zostaje zaktualizowany, a kalendarz odświeży się automatycznie
+przy kolejnym sprawdzeniu (Google Calendar robi to co kilka godzin).
+
+Możesz też uruchomić skrypt ręcznie: zakładka **Actions** → **Hardy Calendar Sync** → **Run workflow**.
+
+---
+
+## Powiadomienia e-mail
+
+GitHub wysyła e-mail gdy workflow zakończy się błędem. Aby to włączyć:
+
+1. GitHub → zdjęcie profilowe → **Settings**
+2. Po lewej: **Notifications**
+3. Sekcja **GitHub Actions** → zaznacz **Email**
 
 ---
 
 ## Struktura plików
 
 ```
-hardy-sync/
-├── index.js                       # główny skrypt – scraping + generowanie ICS
-├── package.json
+Hardy-kalendarz/
+├── index.js                       # scraping (Puppeteer) + generowanie ICS
+├── package.json                   # zależność: puppeteer
 ├── .gitignore
+├── hardy.ics                      # generowany automatycznie – nie edytuj ręcznie
 └── .github/
     └── workflows/
-        └── sync.yml               # harmonogram i konfiguracja GitHub Actions
+        └── sync.yml               # harmonogram GitHub Actions
 ```
 
 ---
 
 ## Rozwiązywanie problemów
 
-**Plik `hardy.ics` jest pusty lub brak wydarzeń**
-Hardy mogło zmienić format strony. Sprawdź logi w zakładce Actions
-(kliknij konkretne uruchomienie → krok „Generuj plik ICS") i prześlij mi
-wypisany fragment tekstu — poprawię parser.
+**Brak wydarzeń w kalendarzu**
+Upewnij się że subskrybujesz URL z GitHub Pages (`github.io`), nie z `raw.githubusercontent.com`.
+Google Calendar nie akceptuje pliku serwowanego z raw.githubusercontent.com.
 
 **Kalendarz nie aktualizuje się**
-Google Calendar odświeża subskrybowane kalendarze co kilka godzin (czasem do 24h).
-Możesz wymusić odświeżenie: w Google Calendar kliknij nazwę kalendarza → menu (⋮) → Odśwież.
+Google Calendar odświeża subskrypcje co kilka godzin. Możesz wymusić odświeżenie:
+calendar.google.com → trzy kropki ⋮ obok kalendarza Hardy → **Odśwież**.
 
 **Workflow nie uruchamia się automatycznie**
-GitHub może dezaktywować harmonogram jeśli repozytorium jest nieaktywne przez 60 dni.
-W takim razie wejdź w Actions i ręcznie kliknij „Run workflow" — to go reaktywuje.
+GitHub dezaktywuje harmonogram po 60 dniach nieaktywności repozytorium.
+Wejdź w Actions → Hardy Calendar Sync → **Run workflow** — to reaktywuje harmonogram.
+
+**Błąd w logu Actions**
+Hardy mogło zmienić format strony. Sprawdź logi kroku „Generuj plik ICS"
+i prześlij mi fragment tekstu — poprawię parser.
