@@ -17,10 +17,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "npm"
-
-      - name: Zainstaluj zależności
-        run: npm ci
 
       - name: Generuj plik ICS
         run: node index.js
