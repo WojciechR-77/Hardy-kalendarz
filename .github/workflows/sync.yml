@@ -16,9 +16,6 @@ jobs:
       - name: Pobierz kod
         uses: actions/checkout@v4
 
-      - name: Zainstaluj Chromium
-        run: sudo apt-get install -y chromium-browser
-
       - name: Ustaw Node.js 24
         uses: actions/setup-node@v4
         with:
@@ -28,8 +25,6 @@ jobs:
         run: npm install
 
       - name: Generuj plik ICS
-        env:
-          PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
         run: node index.js
 
       - name: Zapisz hardy.ics do repozytorium
