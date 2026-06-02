@@ -21,12 +21,12 @@ jobs:
         with:
           node-version: "24"
 
-      - name: Zainstaluj zależności
+      - name: Zainstaluj zaleznosci
         run: npm install
         env:
           PUPPETEER_SKIP_DOWNLOAD: "true"
 
-      - name: Wyczyść cache Puppeteer
+      - name: Wyczysc cache Puppeteer
         run: rm -rf ~/.cache/puppeteer
 
       - name: Pobierz Chrome dla Puppeteer
@@ -35,5 +35,11 @@ jobs:
       - name: Generuj plik ICS
         run: node index.js
 
-      - name: Zapisz hardy.ics do repozytorium
-        run: git config user.name "Hardy Sync Bot" && git config user.email "actions@github.com" && git add hardy.ics && git diff --staged --quiet || git commit -m "chore: aktualizacja planu $(date +'%Y-%m-%d')" && git push
+      - name: Konfiguruj Git
+        run: git config user.name "Hardy Sync Bot" && git config user.email "actions@github.com"
+
+      - name: Commituj zmiany
+        run: git add hardy.ics && git diff --staged --quiet || git commit -m "aktualizacja planu"
+
+      - name: Wypchnij zmiany
+        run: git push
