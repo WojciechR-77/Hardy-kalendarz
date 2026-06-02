@@ -26,11 +26,8 @@ jobs:
         env:
           PUPPETEER_SKIP_DOWNLOAD: "true"
 
-      - name: Wyczysc cache Puppeteer
-        run: rm -rf ~/.cache/puppeteer
-
       - name: Pobierz Chrome dla Puppeteer
-        run: npx puppeteer browsers install chrome
+        run: node node_modules/puppeteer/install.mjs
 
       - name: Generuj plik ICS
         run: node index.js
