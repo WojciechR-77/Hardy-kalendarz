@@ -1,13 +1,10 @@
 {
   "name": "hardy-calendar-sync",
   "version": "4.0.0",
-  "description": "Scraper planu treningowego Hardy → plik ICS do subskrypcji",
+  "description": "Scraper planu treningowego Hardy",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
   "dependencies": {
-    "puppeteer": "^22.0.0"
+    "puppeteer-core": "^22.0.0"
   },
   "engines": {
     "node": ">=18"
