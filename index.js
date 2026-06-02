@@ -4,7 +4,7 @@
  */
 
 const fs = require("fs");
-const puppeteer = require("puppeteer");
+const puppeteer = require("puppeteer-core");
 
 const URLS = [
   "https://www.hardywyzszaforma.pl/post/plan-treningowy-na-tydzie%C5%84-29-07-03-08",
