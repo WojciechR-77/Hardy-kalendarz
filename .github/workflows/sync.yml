@@ -24,9 +24,10 @@ jobs:
       - name: Zainstaluj zależności
         run: npm install
 
-      - name: Pobierz Chrome dla Puppeteer
-        run: npx puppeteer browsers install chrome
-
+    - name: Pobierz Chrome dla Puppeteer
+        run: |
+          rm -rf ~/.cache/puppeteer
+          npx puppeteer browsers install chrome
       - name: Generuj plik ICS
         run: node index.js
 
