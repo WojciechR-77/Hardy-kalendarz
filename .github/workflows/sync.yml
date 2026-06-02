@@ -26,11 +26,10 @@ jobs:
         env:
           PUPPETEER_SKIP_DOWNLOAD: "true"
 
-      - name: Pobierz Chrome dla Puppeteer
-        run: node node_modules/puppeteer/install.mjs
-
       - name: Generuj plik ICS
         run: node index.js
+        env:
+          PUPPETEER_EXECUTABLE_PATH: /usr/bin/google-chrome
 
       - name: Konfiguruj Git
         run: git config user.name "Hardy Sync Bot" && git config user.email "actions@github.com"
