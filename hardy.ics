@@ -5,134 +5,8 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:Hardy – Plan treningowy
 BEGIN:VEVENT
-UID:hardy-20260525@hardy-sync
-DTSTAMP:20260607T120852Z
-DTSTART;VALUE=DATE:20260525
-DTEND;VALUE=DATE:20260526
-SUMMARY:🏋️ Hardy – Speed\, HYROX SPEED\, Athletic\, Functional Body Building
-DESCRIPTION:🏋️ Speed\nĆwiczenia: cal SKI/bike, half down up, wall ball, one arm DB row\nMetoda: 2 rundy: 2 x WORK\nCzas: 23 min\n\n🏋️ HYROX SPEED\nĆwiczenia: cal SKI/bike, half down up, wall ball, one arm DB row\nMetoda: 2 rundy: 2 x WORK\nCzas: 27 min\n\n🏋️ Athletic\nĆwiczenia: pull up, DB's thruster, V-up, hollow hold\nMetoda: EMOM\nCzas: 24 min\n\n🏋️ Functional Body Building\nĆwiczenia: underhand BB row, goblet squat, DB's split squat, wide ring row\nMetoda: 4 rundy, co 2,5 min\nCzas: 21 min
-LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
-END:VEVENT
-BEGIN:VEVENT
-UID:hardy-20260526@hardy-sync
-DTSTAMP:20260607T120852Z
-DTSTART;VALUE=DATE:20260526
-DTEND;VALUE=DATE:20260527
-SUMMARY:🏋️ Hardy – Speed\, Speed Beginners\, Athletic\, Athletic Begginers\, Functional Body Building
-DESCRIPTION:🏋️ Speed\nĆwiczenia: dynamic push up + max bike ERG/ROW/SKI, tuck up + max DB snatch\nMetoda: 4 rundy: 2 x WORK\nCzas: 23 min\n\n🏋️ Speed Beginners\nĆwiczenia: dynamic push up + max bike ERG/ROW/SKI, tuck up + max DB snatch\nMetoda: 4 rundy: 2 x WORK\nCzas: 21 min\n\n🏋️ Athletic\nĆwiczenia: BB glute bridge, powerband pull apart, DB's arnold press, DB's RDL\nMetoda: 4 rundy, co 2,5 min\nCzas: 21 min\n\n🏋️ Athletic Begginers\nĆwiczenia: BB glute bridge, powerband pull apart, DB's arnold press, DB's RDL\nMetoda: 3 rundy, co 2,5 min\nCzas: 16 min\n\n🏋️ Functional Body Building\nĆwiczenia: DB's bench press, copenhagen adduction, BB RDL, lateral raises\nMetoda: 4 rundy, co 2,5 min\nCzas: 21 min
-LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
-END:VEVENT
-BEGIN:VEVENT
-UID:hardy-20260527@hardy-sync
-DTSTAMP:20260607T120852Z
-DTSTART;VALUE=DATE:20260527
-DTEND;VALUE=DATE:20260528
-SUMMARY:🏋️ Hardy – Speed\, Athletic\, HYROX Athletic\, Calisthenics
-DESCRIPTION:🏋️ Speed\nĆwiczenia: SKI/bike, DB's back lunge, battle rope, box jump, one arm push up plank\nMetoda: 5 rund: 40s/20s + TABATA\nCzas: 25 min\n\n🏋️ Athletic\nĆwiczenia: chin up, KB's bulgarian squat, slow rotational climbers, goblet squat\nMetoda: 4 rundy, co 1:15 + EMOM\nCzas: 23 min\n\n🏋️ HYROX Athletic\nĆwiczenia: chin up/box chin up, cyclist goblet squat, gorilla row, front rack/OH lunge\nMetoda: 2 rundy: 2 x WORK\nCzas: 23 min\n\n🏋️ Calisthenics\nĆwiczenia: pull up, forearm plank, single leg wall sit, ring reverse flyes, squat, slow rotational climbers\nMetoda: 2 x EMOM\nCzas: 25 min
-LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
-END:VEVENT
-BEGIN:VEVENT
-UID:hardy-20260528@hardy-sync
-DTSTAMP:20260607T120852Z
-DTSTART;VALUE=DATE:20260528
-DTEND;VALUE=DATE:20260529
-SUMMARY:🏋️ Hardy – Fast&Strong\, Athletic\, Athletic Beginners\, Functional Body Building
-DESCRIPTION:🏋️ Fast&Strong\nĆwiczenia: forearm crunch, DB's push press, slam ball lift, max burpee, hollow hold\nMetoda: 2 x EMOM\nCzas: 24 min\n\n🏋️ Athletic\nĆwiczenia: DB's bench press, miniband fire hydrant, good morning, supinating biceps curl\nMetoda: 4 rundy, co 2,5 min\nCzas: 21 min\n\n🏋️ Athletic Beginners\nĆwiczenia: DB's bench press, miniband fire hydrant, BB RDL, supinating biceps curl\nMetoda: 3 rundy, co 2,5 min\nCzas: 16 min\n\n🏋️ Functional Body Building\nĆwiczenia: DB's flyes, DB cossack squat, BB b-stance RDL, DB's OHP\nMetoda: 4 rundy, co 2,5 min\nCzas: 21 min
-LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
-END:VEVENT
-BEGIN:VEVENT
-UID:hardy-20260529@hardy-sync
-DTSTAMP:20260607T120852Z
-DTSTART;VALUE=DATE:20260529
-DTEND;VALUE=DATE:20260530
-SUMMARY:🏋️ Hardy – Speed\, Athletic\, HYROX\, Calisthenics
-DESCRIPTION:🏋️ Speed\nĆwiczenia: SKI, reverse crunch, DB's box step, RUN (bieżnia), TRX facepull\nMetoda: 6 rund: 40s/20s\nCzas: 30 min\n\n🏋️ Athletic\nĆwiczenia: BB back lunge, bent over DB triceps extension, gorilla row, KB windmill\nMetoda: 4 rundy, co 2,5 min\nCzas: 21 min\n\n🏋️ HYROX\nĆwiczenia: hands release push up, DB's swing, single leg DB hip thrust, RUN, SKI, ROW, bike ERG, wall ball + v-up\nMetoda: 15 min EMOM + 1 runda: 5 min WORK/30s REST\nCzas: 21 min\n\n🏋️ Calisthenics\nĆwiczenia: chin up iso hold, pistol squat, reverse crunch, ring biceps curl, ring triceps extension\nMetoda: 4 rundy, co 1:15 + 2 x TABATA\nCzas: 20 min
-LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
-END:VEVENT
-BEGIN:VEVENT
-UID:hardy-20260530@hardy-sync
-DTSTAMP:20260607T120852Z
-DTSTART;VALUE=DATE:20260530
-DTEND;VALUE=DATE:20260531
-SUMMARY:🏋️ Hardy – Speed\, Athletic
-DESCRIPTION:🏋️ Speed\nĆwiczenia: DB woodchopper, GTO, dynamic push up, ROW/SKI/BIKE, DU/SU (skakanka)\nMetoda: EMOM + TURBO TABATA\nCzas: 21 min\n\n🏋️ Athletic\nĆwiczenia: TTB, KB's RDL, DB's push press, push up, tuck up, DB snatch\nMetoda: EMOM + WORK\nCzas: 21 min
-LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
-END:VEVENT
-BEGIN:VEVENT
-UID:hardy-20260531@hardy-sync
-DTSTAMP:20260607T120852Z
-DTSTART;VALUE=DATE:20260531
-DTEND;VALUE=DATE:20260601
-SUMMARY:🏋️ Hardy – Fast&Strong
-DESCRIPTION:🏋️ Fast&Strong\nĆwiczenia: chin up/ring row, DB's thruster, climbers, wall ball, forearm crunch\nMetoda: 2 x EMOM\nCzas: 24 min
-LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
-END:VEVENT
-BEGIN:VEVENT
-UID:hardy-20260601@hardy-sync
-DTSTAMP:20260607T120852Z
-DTSTART;VALUE=DATE:20260601
-DTEND;VALUE=DATE:20260602
-SUMMARY:🏋️ Hardy – Speed\, HYROX Speed\, Athletic\, Functional Body Building
-DESCRIPTION:🏋️ Speed\nĆwiczenia: BIKE, DB's swing + DB's push press, push up to forearm plank, GTO\nMetoda: 2 x EMOM\nCzas: 25 min\n\n🏋️ HYROX Speed\nĆwiczenia: max BIKE, DB's swing + DB's push press, push up to forearm plank, GTO\nMetoda: 2 x EMOM\nCzas: 25 min\n\n🏋️ Athletic\nĆwiczenia: CLASSIC DEADLIFT, DB external rotation, DB's flyes, copenhagen plank\nMetoda: 4 rundy, co 2,5 min\nCzas: 21 min\n\n🏋️ Functional Body Building\nĆwiczenia: landmine press, miniband monster walk, DB's bench press, bench single leg RDL\nMetoda: 4 rundy, co 2,5 min\nCzas: 21 min
-LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
-END:VEVENT
-BEGIN:VEVENT
-UID:hardy-20260602@hardy-sync
-DTSTAMP:20260607T120852Z
-DTSTART;VALUE=DATE:20260602
-DTEND;VALUE=DATE:20260603
-SUMMARY:🏋️ Hardy – Speed\, Speed Beginners\, Athletic\, Athletic Begginers\, Functional Body Building
-DESCRIPTION:🏋️ Speed\nĆwiczenia: RUN, woodchopper, SKI, SU/DU (skakanka), wall ball\nMetoda: 3 rundy: 70s/30s\nCzas: 25 min\n\n🏋️ Speed Beginners\nĆwiczenia: RUN, woodchopper, SKI, SU/DU (skakanka), squat\nMetoda: 3 rundy: 70s/30s\nCzas: 25 min\n\n🏋️ Athletic\nĆwiczenia: pull up, KB's bulgarian squat, forearm crunch, goblet squat, bent over DB's row\nMetoda: 4 rundy, co 1:15 min + EMOM\nCzas: 23 min\n\n🏋️ Athletic Begginers\nĆwiczenia: pull up, KB's bulgarian squat, forearm crunch, goblet squat, bent over DB's row\nMetoda: 4 rundy, co 1:15 min + EMOM\nCzas: 20 min\n\n🏋️ Functional Body Building\nĆwiczenia: landmine squat, ring row, DB's croosback lunge, bent over reverse flyes\nMetoda: 4 rundy, co 2,5 min\nCzas: 21 min
-LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
-END:VEVENT
-BEGIN:VEVENT
-UID:hardy-20260603@hardy-sync
-DTSTAMP:20260607T120852Z
-DTSTART;VALUE=DATE:20260603
-DTEND;VALUE=DATE:20260604
-SUMMARY:🏋️ Hardy – Speed\, Athletic\, HYROX Athletic\, Calisthenics
-DESCRIPTION:🏋️ Speed\nĆwiczenia: hollow rock, slam ball lift, dynamic push up, burpee, V-up\nMetoda: EMOM +TURBO TABATA\nCzas: 24 min\n\n🏋️ Athletic\nĆwiczenia: ring push up, DB snatch, hollow hold, GTO, single leg glute bridge, forearm plank\nMetoda: 2 x EMOM\nCzas: 25 min\n\n🏋️ HYROX Athletic\nĆwiczenia: ring push up, DB snatch, hollow hold, GTO, push up, forearm plank\nMetoda: EMOM + TURBO TABATA\nCzas: 22 min\n\n🏋️ Calisthenics\nĆwiczenia: pike HS walk around box, ring body saw, active hang, glute bridge walk out, push up, V-up\nMetoda: EMOM + WORK\nCzas: 25 min
-LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
-END:VEVENT
-BEGIN:VEVENT
-UID:hardy-20260604@hardy-sync
-DTSTAMP:20260607T120852Z
-DTSTART;VALUE=DATE:20260604
-DTEND;VALUE=DATE:20260605
-SUMMARY:🏋️ Hardy – Fast&Strong
-DESCRIPTION:🏋️ Fast&Strong\nĆwiczenia: RUN/ROW, one arm DB thruster + push up plank drag in, TRX row + slam ball lift\nMetoda: 4 rundy: 90s/30s\nCzas: 24 min
-LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
-END:VEVENT
-BEGIN:VEVENT
-UID:hardy-20260605@hardy-sync
-DTSTAMP:20260607T120852Z
-DTSTART;VALUE=DATE:20260605
-DTEND;VALUE=DATE:20260606
-SUMMARY:🏋️ Hardy – Speed\, Athletic UPPER BODY\, Calisthenics
-DESCRIPTION:🏋️ Speed\nĆwiczenia: bike ERG, forearm crunch, SKI, battle rope, DB snatch\nMetoda: 5 x TABATA\nCzas: 24 min\n\n🏋️ Athletic UPPER BODY\nĆwiczenia: BB BENCH PRESS, overhand BB row, ring triceps extension, lateral raises, DB's biceps curl\nMetoda: 4 rundy + EMOM\nCzas: 25 min\n\n🏋️ Calisthenics\nĆwiczenia: dip, single leg glute bridge, forearm plank walkout, floor triceps extension, K2E, wall sit\nMetoda: 4 rundy + 2 x TABATA\nCzas: 25 min
-LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
-END:VEVENT
-BEGIN:VEVENT
-UID:hardy-20260606@hardy-sync
-DTSTAMP:20260607T120852Z
-DTSTART;VALUE=DATE:20260606
-DTEND;VALUE=DATE:20260607
-SUMMARY:🏋️ Hardy – Speed\, Athletic
-DESCRIPTION:🏋️ Speed\nĆwiczenia: ROW, side V-up, box jump, one arm DB row, squat, half down up\nMetoda: 5 rund: 40s/20s + WORK\nCzas: 25 min\n\n🏋️ Athletic\nĆwiczenia: chin up, one arm DB thruster, reverse crunch, back lunge with biceps curl\nMetoda: EMOM + TABATA\nCzas: 24 min
-LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
-END:VEVENT
-BEGIN:VEVENT
-UID:hardy-20260607@hardy-sync
-DTSTAMP:20260607T120852Z
-DTSTART;VALUE=DATE:20260607
-DTEND;VALUE=DATE:20260608
-SUMMARY:🏋️ Hardy – Fast&Strong
-DESCRIPTION:🏋️ Fast&Strong\nĆwiczenia: DB's bench press, KB swing, side forearm plank rotation, push up, GTO\nMetoda: EMOM + 2 x 3 min MAX\nCzas: 20 min
-LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
-END:VEVENT
-BEGIN:VEVENT
 UID:hardy-20260608@hardy-sync
-DTSTAMP:20260607T120852Z
+DTSTAMP:20260609T162008Z
 DTSTART;VALUE=DATE:20260608
 DTEND;VALUE=DATE:20260609
 SUMMARY:🏋️ Hardy – Speed\, HYROX Speed\, Athletic\, Functional Body Building
@@ -141,7 +15,7 @@ LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
 END:VEVENT
 BEGIN:VEVENT
 UID:hardy-20260609@hardy-sync
-DTSTAMP:20260607T120852Z
+DTSTAMP:20260609T162008Z
 DTSTART;VALUE=DATE:20260609
 DTEND;VALUE=DATE:20260610
 SUMMARY:🏋️ Hardy – Speed\, Athletic\, Athletic Begginers\, Functional Body Building
@@ -150,7 +24,7 @@ LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
 END:VEVENT
 BEGIN:VEVENT
 UID:hardy-20260610@hardy-sync
-DTSTAMP:20260607T120852Z
+DTSTAMP:20260609T162008Z
 DTSTART;VALUE=DATE:20260610
 DTEND;VALUE=DATE:20260611
 SUMMARY:🏋️ Hardy – Speed\, Athletic\, HYROX Athletic\, Calisthenics
@@ -159,7 +33,7 @@ LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
 END:VEVENT
 BEGIN:VEVENT
 UID:hardy-20260611@hardy-sync
-DTSTAMP:20260607T120852Z
+DTSTAMP:20260609T162008Z
 DTSTART;VALUE=DATE:20260611
 DTEND;VALUE=DATE:20260612
 SUMMARY:🏋️ Hardy – Fast&Strong\, Athletic\, Athletic Beginners\, Functional Body Building
@@ -168,7 +42,7 @@ LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
 END:VEVENT
 BEGIN:VEVENT
 UID:hardy-20260612@hardy-sync
-DTSTAMP:20260607T120852Z
+DTSTAMP:20260609T162008Z
 DTSTART;VALUE=DATE:20260612
 DTEND;VALUE=DATE:20260613
 SUMMARY:🏋️ Hardy – Speed\, Athletic LOWER BODY\, Calisthenics
@@ -177,7 +51,7 @@ LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
 END:VEVENT
 BEGIN:VEVENT
 UID:hardy-20260613@hardy-sync
-DTSTAMP:20260607T120852Z
+DTSTAMP:20260609T162008Z
 DTSTART;VALUE=DATE:20260613
 DTEND;VALUE=DATE:20260614
 SUMMARY:🏋️ Hardy – Speed\, Athletic
@@ -186,11 +60,74 @@ LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
 END:VEVENT
 BEGIN:VEVENT
 UID:hardy-20260614@hardy-sync
-DTSTAMP:20260607T120852Z
+DTSTAMP:20260609T162008Z
 DTSTART;VALUE=DATE:20260614
 DTEND;VALUE=DATE:20260615
 SUMMARY:🏋️ Hardy – Fast&Strong
 DESCRIPTION:🏋️ Fast&Strong\nĆwiczenia: pull up/ring row, gorilla row, goblet squat, max DU/SU (skakanka)\nMetoda: EMOM + WORK\nCzas: 22 min
+LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
+END:VEVENT
+BEGIN:VEVENT
+UID:hardy-20260615@hardy-sync
+DTSTAMP:20260609T162008Z
+DTSTART;VALUE=DATE:20260615
+DTEND;VALUE=DATE:20260616
+SUMMARY:🏋️ Hardy – Speed\, HYROX SPEED\, Athletic\, Functional Body Building
+DESCRIPTION:🏋️ Speed\nĆwiczenia: dynamic push up, ROW, DB snatch, BIKE, burpee, forearm plank\nMetoda: 2 x EMOM + TABATA\nCzas: 25 min\n\n🏋️ HYROX SPEED\nĆwiczenia: dynamic push up, ROW, DB snatch, BIKE, burpee\nMetoda: 2 x EMOM + TABATA\nCzas: 25 min\n\n🏋️ Athletic\nĆwiczenia: BB BENCH PRESS, single leg hip thrust, b-stance BB RDL, front raises\nMetoda: 4 rundy, co 2,5 min\nCzas: 21 min\n\n🏋️ Functional Body Building\nĆwiczenia: DB's bench press, copenhagen plank, BB RDL, front raises\nMetoda: 4 rundy, co 2,5 min\nCzas: 21 min
+LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
+END:VEVENT
+BEGIN:VEVENT
+UID:hardy-20260616@hardy-sync
+DTSTAMP:20260609T162008Z
+DTSTART;VALUE=DATE:20260616
+DTEND;VALUE=DATE:20260617
+SUMMARY:🏋️ Hardy – Speed\, Speed Beginners\, Athletic\, Athletic Begginers\, Functional Body Building
+DESCRIPTION:🏋️ Speed\nĆwiczenia: SKI, slow rotational climbers, RUN (bieżnia), battle rope, wall ball\nMetoda: 5 x TABATA\nCzas: 24 min\n\n🏋️ Speed Beginners\nĆwiczenia: SKI/ROW, slow rotational climbers, battle rope, wall ball\nMetoda: 4 x TABATA\nCzas: 19 min\n\n🏋️ Athletic\nĆwiczenia: BACK SQUAT, shrugs, overhand BB row, DB's split squat\nMetoda: 4 rundy, co 2,5 min\nCzas: 21 min\n\n🏋️ Athletic Begginers\nĆwiczenia: BACK SQUAT, shrugs, overhand BB row, DB's split squat\nMetoda: 3 rundy, co 2,5 min\nCzas: 16 min\n\n🏋️ Functional Body Building\nĆwiczenia: underhand BB row, goblet squat, ring row, DB's split squat\nMetoda: 4 rundy, co 2,5 min\nCzas: 21 min
+LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
+END:VEVENT
+BEGIN:VEVENT
+UID:hardy-20260617@hardy-sync
+DTSTAMP:20260609T162008Z
+DTSTART;VALUE=DATE:20260617
+DTEND;VALUE=DATE:20260618
+SUMMARY:🏋️ Hardy – Speed\, Athletic\, HYROX Athletic\, Calisthenics
+DESCRIPTION:🏋️ Speed\nĆwiczenia: push up, max BIKE, max slam ball ift, max V-UP\nMetoda: buy in + EMOM + buy out\nCzas: 22 min\n\n🏋️ Athletic\nĆwiczenia: push up, single arm swing, tuck up\nMetoda: DRABINKA\nCzas: 20 min\n\n🏋️ HYROX Athletic\nĆwiczenia: push up, single arm swing, tuck up, push up plank, climbers\nMetoda: DRABINKA + EXTRA WORK\nCzas: 25 min\n\n🏋️ Calisthenics\nĆwiczenia: incline push up, box hamistring glute bridge, diamond push up, tuck up, ring push up, K2E, partner pallof press\nMetoda: 3 x EMOM + TABATA\nCzas: 25 min
+LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
+END:VEVENT
+BEGIN:VEVENT
+UID:hardy-20260618@hardy-sync
+DTSTAMP:20260609T162008Z
+DTSTART;VALUE=DATE:20260618
+DTEND;VALUE=DATE:20260619
+SUMMARY:🏋️ Hardy – Fast&Strong\, Athletic\, Athletic Beginners\, Functional Body Building
+DESCRIPTION:🏋️ Fast&Strong\nĆwiczenia: side forearm plank pulse, slam ball box step, one arm DB row, DU/SU (skakanka), half down up, goblet squat\nMetoda: EMOM + 3 rundy\nCzas: 22 min\n\n🏋️ Athletic\nĆwiczenia: pull up, KB's bulgarian squat, ring facepull, goblet squat, DB twist\nMetoda: 4 rundy, co 1:15 + EMOM\nCzas: 23 min\n\n🏋️ Athletic Beginners\nĆwiczenia: pull up, KB's bulgarian squat, ring facepull, goblet squat, DB twist\nMetoda: 4 rundy, co 1:15 + EMOM\nCzas: 20 min\n\n🏋️ Functional Body Building\nĆwiczenia: DB pullover, DB's bulgarian squat, landmine squat, powerband pull down\nMetoda: 4 rundy, co 2,5 min\nCzas: 21 min
+LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
+END:VEVENT
+BEGIN:VEVENT
+UID:hardy-20260619@hardy-sync
+DTSTAMP:20260609T162008Z
+DTSTART;VALUE=DATE:20260619
+DTEND;VALUE=DATE:20260620
+SUMMARY:🏋️ Hardy – Speed\, Athletic\, Calisthenics
+DESCRIPTION:🏋️ Speed\nĆwiczenia: BIKE, reverse crunch, RUN (bieżnia), GTO, push up plank shoulder taps\nMetoda: 4 rundy: 60s/30s\nCzas: 30 min\n\n🏋️ Athletic\nĆwiczenia: CLASSIC DEADLIFT, KB halo, BB OHP, powerband pallof rotation\nMetoda: 4 rundy, co 2,5 min\nCzas: 21 min\n\n🏋️ Calisthenics\nĆwiczenia: box pike push up, single leg hip thrust, ring L-sit, hollow hold, ring triceps extension, active hang on bar\nMetoda: 2 x EMOM\nCzas: 22 min
+LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
+END:VEVENT
+BEGIN:VEVENT
+UID:hardy-20260620@hardy-sync
+DTSTAMP:20260609T162008Z
+DTSTART;VALUE=DATE:20260620
+DTEND;VALUE=DATE:20260621
+SUMMARY:🏋️ Hardy – Speed\, Athletic
+DESCRIPTION:🏋️ Speed\nĆwiczenia: cal ROW/SKI, half down up, box jump, climbers, goblet squat, TRX row\nMetoda: 3 x WORK\nCzas: 23 min\n\n🏋️ Athletic\nĆwiczenia: chin up, DB's back lunge, KB's gorilla row, swissball stir the pot\nMetoda: EMOM\nCzas: 24 min
+LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
+END:VEVENT
+BEGIN:VEVENT
+UID:hardy-20260621@hardy-sync
+DTSTAMP:20260609T162008Z
+DTSTART;VALUE=DATE:20260621
+DTEND;VALUE=DATE:20260622
+SUMMARY:🏋️ Hardy – Fast&Strong
+DESCRIPTION:🏋️ Fast&Strong\nĆwiczenia: ring push up, swing, hollow hold, bex step + tuck up, RUN/ROW/SKI\nMetoda: EMOM + 2 rundy\nCzas: 22 min
 LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
 END:VEVENT
 END:VCALENDAR
