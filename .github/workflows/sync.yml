@@ -30,6 +30,7 @@ jobs:
         run: node index.js
         env:
           PUPPETEER_EXECUTABLE_PATH: /usr/bin/google-chrome
+          HARDY_PASSWORD: ${{ secrets.HARDY_PASSWORD }}
 
       - name: Konfiguruj Git
         run: git config user.name "Hardy Sync Bot" && git config user.email "actions@github.com"
