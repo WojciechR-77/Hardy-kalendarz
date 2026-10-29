@@ -159,7 +159,7 @@ LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
 END:VEVENT
 BEGIN:VEVENT
 UID:hardy-20261029@hardy-sync
-DTSTAMP:20261027T114228Z
+DTSTAMP:20261029T122442Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:🏋️ Hardy – ATHLETIC: CORE\, FBB · BALANCE: POWER FLOW\, ZDROWY KRĘGOSŁUP
@@ -168,7 +168,7 @@ LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
 END:VEVENT
 BEGIN:VEVENT
 UID:hardy-20261030@hardy-sync
-DTSTAMP:20261027T114228Z
+DTSTAMP:20261029T122442Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:🏋️ Hardy – ATHLETIC: KALISTENIKA\, LOWER BODY · SPEED: ENDURANCE · BALANCE: JOINT BY JOINT
@@ -177,7 +177,7 @@ LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
 END:VEVENT
 BEGIN:VEVENT
 UID:hardy-20261031@hardy-sync
-DTSTAMP:20261027T114228Z
+DTSTAMP:20261029T122442Z
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261101
 SUMMARY:🏋️ Hardy – ATHLETIC: STRENGTH · SPEED: CONDITIONING
@@ -186,7 +186,7 @@ LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
 END:VEVENT
 BEGIN:VEVENT
 UID:hardy-20261101@hardy-sync
-DTSTAMP:20261027T114228Z
+DTSTAMP:20261029T122442Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:🏋️ Hardy – SPEED: ENDURANCE
@@ -195,7 +195,7 @@ LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
 END:VEVENT
 BEGIN:VEVENT
 UID:hardy-20261102@hardy-sync
-DTSTAMP:20261027T114228Z
+DTSTAMP:20261029T122442Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261103
 SUMMARY:🏋️ Hardy – ATHLETIC: FBB\, SLED WORKOUT · SPEED: CONDITIONING\, HYROX · BALANCE: JOINT BY JOINT\, ZDROWY KRĘGOSŁUP
@@ -204,7 +204,7 @@ LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
 END:VEVENT
 BEGIN:VEVENT
 UID:hardy-20261103@hardy-sync
-DTSTAMP:20261027T114228Z
+DTSTAMP:20261029T122442Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:🏋️ Hardy – ATHLETIC: KALISTENIKA\, STRENGTH · SPEED: ENDURANCE · BALANCE: PILATES
@@ -213,7 +213,7 @@ LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
 END:VEVENT
 BEGIN:VEVENT
 UID:hardy-20261104@hardy-sync
-DTSTAMP:20261027T114228Z
+DTSTAMP:20261029T122442Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:🏋️ Hardy – ATHLETIC: CORE\, STRENGTH · SPEED: CONDITIONING\, HYROX · BALANCE: JOINT BY JOINT\, PILATES
@@ -222,16 +222,16 @@ LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
 END:VEVENT
 BEGIN:VEVENT
 UID:hardy-20261105@hardy-sync
-DTSTAMP:20261027T114228Z
+DTSTAMP:20261029T122442Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:🏋️ Hardy – ATHLETIC: CORE\, FBB · SPEED: ENDURANCE · BALANCE: POWER FLOW\, ZDROWY KRĘGOSŁUP
-DESCRIPTION:🏋️ ATHLETIC – CORE (30 min\, SALA BASE)\nA) Stabilizacja głęboka · 2 rundy\n   A1 Paused bird dog\n   A2 One arm push up plank\n   A3 Single leg glute bridge + abduction\nB) EMOM · 9min\n   B1 25/25s single leg RDL to knee raise\n   B2 30-45s reverse plank march\n   B3 30-45s slow rot. clmbers\nC) Tabata · 8 rund (20s/10s)\n   C1 Hollow flutter kicks\n\n🏋️ ATHLETIC – FBB (22 min)\nA) 4 rundy\, co 1:30 wykonaj:\n   A1 6-12 pull up [2s ecc]\n   A2 16 weighted bulgarian squat [2s ecc]\nB) EMOM · 8min\n   B1 10 ring facepull [2s ecc]\n   B2 10 goblet squat [2s ecc]\n\n🏋️ SPEED – ENDURANCE (21 min)\nA) EMOM · 12 min\n   A1 6-12 chin up\n   A2 30s tuck up\n   A3 6/12/18 box jump\nB) EMOM · 8 min\n   B1 10/10 one arm DB row\n   B2 16 goblet squat\n\n🏋️ BALANCE – POWER FLOW (45 min)\nA) Mobilizacja · 5min\n   A1 Pobudzenie i mobilty całego ciała\nB) Rundy · 35min\n   B1 Dynamiczne sekwencje ruchowe\n   B2 Płynne przejścia między pozycjami\n   B3 Ćwiczenia poprawiające sprężystość\n   B4 Wielokierunkowe wzorce ruchowe\nC) Wyciszenie · 5min\n   C1 Ćwiczenia oddechowe / rollowanie\n\n🏋️ BALANCE – ZDROWY KRĘGOSŁUP (45 min)\nA) Mobilizacja · 10min\n   A1 Mięśnie pośladkowe\n   A2 Mięśnie kulszowo-goleniowe\n   A3 Zginacze bioder\n   A4 Odcinek piersiowy kręgosłupa\n   A5 Odcinek szyjny kręgosłupa\nB) Oddech · 5 min\n   B1 Nauka oddechu dolnożebrowego\n   B2 Aktywacja głębokich mięśni brzucha\nC) Wzmacnianie · 30min\n   C1 Mięśnie głębokie brzucha\n   C2 Mięśnie grzbietu\n   C3 Mięśnie pośladkowe\n   C4 Mięśnie stabilizujące staw ramienny\n   C5 Stabilizacja centralna
+DESCRIPTION:🏋️ ATHLETIC – CORE (30 min\, SALA BASE)\nA) Stabilizacja głęboka · 2 rundy\n   A1 Paused bird dog\n   A2 One arm push up plank\n   A3 Single leg glute bridge + abduction\nB) EMOM · 9min\n   B1 25/25s single leg RDL\n   B2 30-45s reverse plank march\n   B3 30-45s slow rot. clmbers\nC) Tabata · 8 rund (20s/10s)\n   C1 Hollow flutter kicks\n\n🏋️ ATHLETIC – FBB (22 min)\nA) 4 rundy\, co 1:30 wykonaj:\n   A1 6-12 pull up [2s ecc]\n   A2 16 weighted bulgarian squat [2s ecc]\nB) EMOM · 8min\n   B1 10 ring facepull [2s ecc]\n   B2 10 goblet squat [2s ecc]\n\n🏋️ SPEED – ENDURANCE (21 min)\nA) EMOM · 12 min\n   A1 6-12 chin up\n   A2 30s tuck up\n   A3 6/12/18 box jump\nB) EMOM · 8 min\n   B1 10/10 one arm DB row\n   B2 16 goblet squat\n\n🏋️ BALANCE – POWER FLOW (45 min)\nA) Mobilizacja · 5min\n   A1 Pobudzenie i mobilty całego ciała\nB) Rundy · 35min\n   B1 Dynamiczne sekwencje ruchowe\n   B2 Płynne przejścia między pozycjami\n   B3 Ćwiczenia poprawiające sprężystość\n   B4 Wielokierunkowe wzorce ruchowe\nC) Wyciszenie · 5min\n   C1 Ćwiczenia oddechowe / rollowanie\n\n🏋️ BALANCE – ZDROWY KRĘGOSŁUP (45 min)\nA) Mobilizacja · 10min\n   A1 Mięśnie pośladkowe\n   A2 Mięśnie kulszowo-goleniowe\n   A3 Zginacze bioder\n   A4 Odcinek piersiowy kręgosłupa\n   A5 Odcinek szyjny kręgosłupa\nB) Oddech · 5 min\n   B1 Nauka oddechu dolnożebrowego\n   B2 Aktywacja głębokich mięśni brzucha\nC) Wzmacnianie · 30min\n   C1 Mięśnie głębokie brzucha\n   C2 Mięśnie grzbietu\n   C3 Mięśnie pośladkowe\n   C4 Mięśnie stabilizujące staw ramienny\n   C5 Stabilizacja centralna
 LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
 END:VEVENT
 BEGIN:VEVENT
 UID:hardy-20261106@hardy-sync
-DTSTAMP:20261027T114228Z
+DTSTAMP:20261029T122442Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:🏋️ Hardy – ATHLETIC: KALISTENIKA\, UPPER BODY · SPEED: CONDITIONING · BALANCE: JOINT BY JOINT
@@ -240,7 +240,7 @@ LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
 END:VEVENT
 BEGIN:VEVENT
 UID:hardy-20261107@hardy-sync
-DTSTAMP:20261027T114228Z
+DTSTAMP:20261029T122442Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261108
 SUMMARY:🏋️ Hardy – ATHLETIC: FBB · SPEED: ENDURANCE
@@ -249,7 +249,7 @@ LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
 END:VEVENT
 BEGIN:VEVENT
 UID:hardy-20261108@hardy-sync
-DTSTAMP:20261027T114228Z
+DTSTAMP:20261029T122442Z
 DTSTART;VALUE=DATE:20261108
 DTEND;VALUE=DATE:20261109
 SUMMARY:🏋️ Hardy – SPEED: ENDURANCE
@@ -258,20 +258,38 @@ LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
 END:VEVENT
 BEGIN:VEVENT
 UID:hardy-20261109@hardy-sync
-DTSTAMP:20261027T114228Z
+DTSTAMP:20261029T122442Z
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
-SUMMARY:🏋️ Hardy – ATHLETIC: FBB · BALANCE: JOINT BY JOINT\, ZDROWY KRĘGOSŁUP
-DESCRIPTION:🏋️ ATHLETIC – FBB (22 min)\nA) 4 rundy\, co 1:30 wykonaj:\n   A1 16 BB split squat [2s ecc]\n   A2 10-12 DB pullover [3s ecc]\nB) EMOM · 8min\n   B1 10 ring reverse flyes [2s ecc]\n   B2 10 DB's front squat [2s ecc]\n\n🏋️ BALANCE – JOINT BY JOINT (45 min)\nA) Mobilizacja · 20min\n   A1 Stopa / staw skokowy\n   A2 Staw biodrowy\n   A3 Staw ramienny\n   A4 Odcinek piersiowy kręgosłupa\n   A5 Odcinek szyjny kręgosłupa\nB) Stabilizacja · 20min\n   B1 Staw kolanowy\n   B2 Staw biodrowy\n   B3 Odcinek lędźwiowy kręgosłupa\n   B4 Staw ramienny\n   B5 Koordynacja całego ciała\nC) Wyciszenie · 5min\n   C1 Ćwiczenia oddechowe\n\n🏋️ BALANCE – ZDROWY KRĘGOSŁUP (45 min)\nA) Mobilizacja · 10min\n   A1 Mięśnie pośladkowe\n   A2 Mięśnie kulszowo-goleniowe\n   A3 Zginacze bioder\n   A4 Odcinek piersiowy kręgosłupa\n   A5 Odcinek szyjny kręgosłupa\nB) Oddech · 5 min\n   B1 Nauka oddechu dolnożebrowego\n   B2 Aktywacja głębokich mięśni brzucha\nC) Wzmacnianie · 30min\n   C1 Mięśnie głębokie brzucha\n   C2 Mięśnie grzbietu\n   C3 Mięśnie pośladkowe\n   C4 Mięśnie stabilizujące staw ramienny\n   C5 Stabilizacja centralna
+SUMMARY:🏋️ Hardy – ATHLETIC: CORE\, FBB · BALANCE: JOINT BY JOINT\, ZDROWY KRĘGOSŁUP
+DESCRIPTION:🏋️ ATHLETIC – CORE (30 min\, SALA BASE)\nA) Stabilizacja głęboka · 2 rundy\n   A1 45-60s Forearm plank\n   A2 45s Quadruped shoulder taps\n   A3 6x10s McGill crunch\nB) EMOM · 9min\n   B1 30-45s Rings slow climbers\n   B2 8-12 K2E\n   B3 20/20s SL glute bridge iso hold\nC) Tabata · 4min\n   C1 Weighted side forearm plank\n\n🏋️ ATHLETIC – FBB (22 min)\nA) 4 rundy\, co 1:30 wykonaj:\n   A1 16 BB split squat [2s ecc]\n   A2 10-12 DB pullover [3s ecc]\nB) EMOM · 8min\n   B1 10 ring reverse flyes [2s ecc]\n   B2 10 DB's front squat [2s ecc]\n\n🏋️ BALANCE – JOINT BY JOINT (45 min)\nA) Mobilizacja · 20min\n   A1 Stopa / staw skokowy\n   A2 Staw biodrowy\n   A3 Staw ramienny\n   A4 Odcinek piersiowy kręgosłupa\n   A5 Odcinek szyjny kręgosłupa\nB) Stabilizacja · 20min\n   B1 Staw kolanowy\n   B2 Staw biodrowy\n   B3 Odcinek lędźwiowy kręgosłupa\n   B4 Staw ramienny\n   B5 Koordynacja całego ciała\nC) Wyciszenie · 5min\n   C1 Ćwiczenia oddechowe\n\n🏋️ BALANCE – ZDROWY KRĘGOSŁUP (45 min)\nA) Mobilizacja · 10min\n   A1 Mięśnie pośladkowe\n   A2 Mięśnie kulszowo-goleniowe\n   A3 Zginacze bioder\n   A4 Odcinek piersiowy kręgosłupa\n   A5 Odcinek szyjny kręgosłupa\nB) Oddech · 5 min\n   B1 Nauka oddechu dolnożebrowego\n   B2 Aktywacja głębokich mięśni brzucha\nC) Wzmacnianie · 30min\n   C1 Mięśnie głębokie brzucha\n   C2 Mięśnie grzbietu\n   C3 Mięśnie pośladkowe\n   C4 Mięśnie stabilizujące staw ramienny\n   C5 Stabilizacja centralna
 LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
 END:VEVENT
 BEGIN:VEVENT
 UID:hardy-20261110@hardy-sync
-DTSTAMP:20261027T114228Z
+DTSTAMP:20261029T122442Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
-SUMMARY:🏋️ Hardy – ATHLETIC: FBB · BALANCE: PILATES
-DESCRIPTION:🏋️ ATHLETIC – FBB (22 min)\nA) 4 rundy\, co 1:30 wykonaj:\n   A1 10-12 BB RDL [2s ecc]\n   A2 10-12 DB's flyes [3s ecc]\nB) EMOM · 8min\n   B1 10 DB's front raise [2s ecc]\n   B2 20/20s star plank\n\n🏋️ BALANCE – PILATES (45 min)\nA) Mobilizacja · 5-7 min\n   A1 Pobudzenie i mobilty całego ciała\nB) Oddech · 3 min\n   B1 Nauka oddechu dolnożebrowego\n   B2 Aktywacja głębokich mięśni brzucha\nC) Wzmacnianie · 35 min\n   C1 Budowanie świadomości ciała\n   C2 Wzmocnienie mięśni stabilizacyjnych\n   C3 Mobilizacja napiętych struktur\n   C4 Integracja ruchu z oddechem\n   C5 Wyciszenie i relaks
+SUMMARY:🏋️ Hardy – ATHLETIC: FBB\, KALISTENIKA · BALANCE: PILATES
+DESCRIPTION:🏋️ ATHLETIC – FBB (22 min)\nA) 4 rundy\, co 1:30 wykonaj:\n   A1 10-12 BB RDL [2s ecc]\n   A2 10-12 DB's flyes [3s ecc]\nB) EMOM · 8min\n   B1 10 DB's front raise [2s ecc]\n   B2 20/20s star plank\n\n🏋️ ATHLETIC – KALISTENIKA (25 min\, SALA BASE)\nA) EMOM · 20min\n   A1 8-16 decline push up\n   A2 30-40s sliders leg curl\n   A3 30-40s scapula pull up\n   A4 12-16 TRX biceps curl\nB) Tabata · 4min\n   B1 forearm to push up plank\n\n🏋️ BALANCE – PILATES (45 min)\nA) Mobilizacja · 5-7 min\n   A1 Pobudzenie i mobilty całego ciała\nB) Oddech · 3 min\n   B1 Nauka oddechu dolnożebrowego\n   B2 Aktywacja głębokich mięśni brzucha\nC) Wzmacnianie · 35 min\n   C1 Budowanie świadomości ciała\n   C2 Wzmocnienie mięśni stabilizacyjnych\n   C3 Mobilizacja napiętych struktur\n   C4 Integracja ruchu z oddechem\n   C5 Wyciszenie i relaks
+LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
+END:VEVENT
+BEGIN:VEVENT
+UID:hardy-20261111@hardy-sync
+DTSTAMP:20261029T122442Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:🏋️ Hardy – ATHLETIC: STRENGTH
+DESCRIPTION:🏋️ ATHLETIC – STRENGTH (21 min)\nA) 4 rundy\, co 2.5min wykonaj parę ćwiczeń:\n   A1 4-10 back squat\n   A2 12-16 powerband facepull\nB) 4 rundy\, co 2.5min wykonaj parę ćwiczeń:\n   B1 10-12 overhand BB row\n   B2 12-16 one arm DB overhead lunge
+LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
+END:VEVENT
+BEGIN:VEVENT
+UID:hardy-20261112@hardy-sync
+DTSTAMP:20261029T122442Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:🏋️ Hardy – ATHLETIC: CORE\, STRENGTH · BALANCE: POWER FLOW\, ZDROWY KRĘGOSŁUP
+DESCRIPTION:🏋️ ATHLETIC – CORE (30 min\, SALA BASE)\nA) Stabilizacja głęboka · 2 rundy\n   A1 3x15s Quadruped hover\n   A2 45s Double leg deadbug\n   A3 30/30s Side forearm plank rotations\nB) Tabata · 4min\n   B1 Loaded reverse lunge\nC) EMOM · 9min\n   C1 6/6 One arm TRX row\n   C2 30-45s Swisball stir the pot\n   C3 30-45s Push up plank shoulder taps\n\n🏋️ ATHLETIC – STRENGTH (21 min)\nA) Co 2\,5 minuty wykonaj parę ćwiczeń · 4 rundy\n   A1 4-10 classic deadlift\n   A2 12-16 DB external rotation\nB) Co 2\,5 minuty wykonaj parę ćwiczeń · 4 rundy\n   B1 4-10 BB bench press\n   B2 12-16 single leg hip thrust\n\n🏋️ BALANCE – POWER FLOW (45 min)\nA) Mobilizacja · 5min\n   A1 Pobudzenie i mobilty całego ciała\nB) Rundy · 35min\n   B1 Dynamiczne sekwencje ruchowe\n   B2 Płynne przejścia między pozycjami\n   B3 Ćwiczenia poprawiające sprężystość\n   B4 Wielokierunkowe wzorce ruchowe\nC) Wyciszenie · 5min\n   C1 Ćwiczenia oddechowe / rollowanie\n\n🏋️ BALANCE – ZDROWY KRĘGOSŁUP (45 min)\nA) Mobilizacja · 10min\n   A1 Mięśnie pośladkowe\n   A2 Mięśnie kulszowo-goleniowe\n   A3 Zginacze bioder\n   A4 Odcinek piersiowy kręgosłupa\n   A5 Odcinek szyjny kręgosłupa\nB) Oddech · 5 min\n   B1 Nauka oddechu dolnożebrowego\n   B2 Aktywacja głębokich mięśni brzucha\nC) Wzmacnianie · 30min\n   C1 Mięśnie głębokie brzucha\n   C2 Mięśnie grzbietu\n   C3 Mięśnie pośladkowe\n   C4 Mięśnie stabilizujące staw ramienny\n   C5 Stabilizacja centralna
 LOCATION:Hardy. Wyższa Forma\, ul. Nyska 59\, Wrocław
 END:VEVENT
 END:VCALENDAR
